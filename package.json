@@ -1,0 +1,49 @@
+{
+	"name": "eslint-config-devansvd",
+	"version": "0.3.0",
+	"description": "devansvd's eslint config for js, nodejs, maybe jsx too",
+	"main": "index.js",
+	"scripts": {
+		"lint": "$(npm bin)/eslint .",
+		"lint:fix": "$(npm bin)/eslint . --fix"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "npm run lint:fix"
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/devansvd/eslint-config-devansvd.git"
+	},
+	"keywords": [
+		"eslint",
+		"eslint-config",
+		"devansvd",
+		"prettier",
+		"nodejs",
+		"javascript",
+		"lint"
+	],
+	"author": "Devan <devansvd7@gmail.com> (https://devansvd.com)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/devansvd/eslint-config-devansvd/issues"
+	},
+	"homepage": "https://github.com/devansvd/eslint-config-devansvd#readme",
+	"dependencies": {
+		"eslint-config-airbnb": "^18.1.0",
+		"eslint-config-airbnb-base": "^14.1.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-import": "^2.20.2",
+		"eslint-plugin-jsx-a11y": "^6.2.3",
+		"eslint-plugin-prettier": "^3.1.3",
+		"eslint-plugin-react": "^7.19.0",
+		"eslint-plugin-react-hooks": "^2.5.0",
+		"eslint": "^6.8.0",
+		"prettier": "2.0.5"
+	},
+	"devDependencies": {
+		"husky": "^4.2.5"
+	}
+}
