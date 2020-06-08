@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-devansvd",
-	"version": "0.1.0",
+	"version": "0.4.0",
 	"description": "devansvd's eslint config for js, nodejs, maybe jsx too",
 	"main": "index.js",
 	"scripts": {
